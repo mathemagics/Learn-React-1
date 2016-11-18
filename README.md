@@ -10,7 +10,7 @@ NOTES:
 
 >> react-native init albums
 
-AppRegistry.registerComponent('albums', ( ) => App );
+    AppRegistry.registerComponent('albums', ( ) => App );
 
 
 * 1 component per file
@@ -32,28 +32,31 @@ to make something the max width:
       }    
 
  // to get console.log( )
-CMD D -  Debug Menu
+    CMD D -  Debug Menu
 
 // AJAX //
-npm install —save axios
-import axios from ‘axios’
+
+    npm install —save axios
+    import axios from ‘axios’
 
 
   // Component Level State  //
-    
-     Initialize:
-class AlbumList extends Component {
-  state = { };
-}
+  Initialize:
+     
+        class AlbumList extends Component {
+          state = { };
+        }
 
-    Use built in setState method:
-.then(response => this.setState({ albums: response.data}));
+Use built in setState method:
 // note. it takes an object as an argument
+    
+    .then(response => this.setState({ albums: response.data}));
 
-    props: parent to child communication
+props: parent to child communication
 
-    objects rendered from an array need to have a unique key
-<Text key={ album.title }>{ album.title }</Text>
+objects rendered from an array need to have a unique key
+    
+    <Text key={ album.title }>{ album.title }</Text>
 
 Passing form parent to child:
 
@@ -70,11 +73,12 @@ NOTE:     if a component is passed from one component to another,
 
 NOTE:         plan ahead needed for designing layouts
 
-      // LAYOUTS //
-    // Its all about the flex-box
+  // LAYOUTS //
+// Its all about the flex-box
 
-To make components next to each other, put them in separate views.
-        Then:             flex-direction: ‘row'
+To make components next to each other, put them in separate views. Then: 
+    
+        flex-direction: ‘row'
 This affects the direction justifyContent aligns components.
 
      //  IMAGES  //
