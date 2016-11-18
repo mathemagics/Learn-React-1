@@ -1,8 +1,8 @@
 # Learn-React-1
 
-Basic introduction to coding in React-Native. Design an app that displays a list of Taylor Swift albums 
-and an associated link to the amazon page to buy the album. Made many reusable components for future projects 
-including cards and buttons. 
+    Basic introduction to coding in React-Native. Design an app that displays a list of Taylor Swift albums 
+    and an associated link to the amazon page to buy the album. Made many reusable components for future projects 
+    including cards and buttons. 
 
 NOTES:
 
@@ -102,22 +102,24 @@ MUST specify the width and height.
 // SCROLLING //
 
 Identify component
-import ScrollView instead of View
+
+    import ScrollView instead of View
+    
 ScrollView requires a style of flex: 1 of its parent component.
 
 // BUTTONS //
 
 
-const Button = ({onPress}) => {
-    return (
-        <TouchableOpacity
-        style={buttonStyle}
-        onPress={onPress} >
-          <Text style={textStyle}>Click Me!</Text>
-        </TouchableOpacity>
+    const Button = ({onPress}) => {
+        return (
+            <TouchableOpacity
+            style={buttonStyle}
+            onPress={onPress} >
+              <Text style={textStyle}>Click Me!</Text>
+            </TouchableOpacity>
 
-  );
-};
+      );
+    };
 
 //  LINKING  //
 
@@ -125,7 +127,7 @@ const Button = ({onPress}) => {
     
     <Button
      onPress={() => Linking.openURL(url)}
-  />
+    />
 
 
 
